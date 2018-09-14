@@ -3244,7 +3244,7 @@ h1 {
 	}
 	.bricks-wrapper .item-wrap:hover .item-text{
 		width: 90%;
-		margin-top: -20px;
+		margin-top: 0;
 	}
 	.bricks-wrapper .item-wrap .item-text .folio-types{
     font-size: 1.3rem;
