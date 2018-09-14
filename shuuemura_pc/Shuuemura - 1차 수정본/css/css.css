@@ -1,0 +1,417 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i&subset=cyrillic,cyrillic-ext,devanagari,greek,greek-ext,latin-ext,vietnamese');
+*{margin:0;padding:0;}
+li{list-style-type:none;}
+i{color: #fff;}
+a{text-decoration: none; color:#fff; font-size:15px;}
+img{width: 100%;}
+label, span{display: inline-block;}
+button{border: 0; background: none; outline: none; cursor: pointer;}
+body{font-family: 'Noto Sans', sans-serif;}
+.skip{font-size: 0; text-indent: -9999px; position: absolute; left: -9999px;}
+.center{width: 100%; margin: auto; position: relative;}
+
+/* intro =====================================*/
+#intro{
+  background: #000;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+#intro .wrap-left{
+  height: 100vh;
+  float: left;
+  width: 200px;
+  border-right: 1px solid #333333;
+  text-align: left;
+  left: 0;
+  top: 0;
+  text-align: center;
+
+}
+#intro .wrap-right{
+  height: 100vh;
+  top: 0;
+  left: -200px;
+  float: right;
+  text-align: right;
+}
+#intro .wrap-left,
+#intro .wrap-right{
+  position: relative;
+  display: block;
+  overflow: hidden;
+  transform: rotate(25deg) translateY(-230px);
+  width: 50%;
+  box-sizing: border-box;
+  transition: all 200ms ease-in 100ms;
+}
+#intro .wrap-left .rot,
+#intro .wrap-right .rot{
+  position: relative;
+  line-height: 780px;
+  display: block;
+  transform: rotate(-25deg);
+  margin-top: 300px;
+}
+#intro .wrap-left a{
+  font-size: 4em;
+}
+#intro .wrap-right a{
+  margin-top: 80px;
+  font-size: 4em;
+}
+#intro .up {
+  top: 500px;
+  left: -300px;
+}
+#intro .down {
+  top: -500px;
+  left: 300px;
+}
+
+/* 토글메뉴버튼을 제어하는 체크박스*/
+#btn-menu{display: none;}
+
+/* header ==============================================*/
+header{
+  position: relative;
+  width: 100%; height: 150px; background: #000;
+  border-top: 1px solid #fff; border-bottom: 1px solid #fff;
+}
+header.fixed{
+  position: fixed;
+  z-index: 2;
+  top: 0;
+}
+header h1{width: 330px; margin-left: 50px;}
+header h1 img{width: 100%; margin-top: 30px;}
+
+/* 네비게이션 */
+#mainNav{
+  /* position: relative;
+  height: 64px; */
+}
+.m-list{
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+}
+.m-list__item{
+  float: left;
+  padding-right: 50px;
+}
+.m-list__item:nth-child(1){padding-left: 50px;}
+.m-list__item > a{display: inline-block; line-height: 40px; border-bottom: 5px solid #000;}
+.m-list__item > a:hover{color: #f8aa1c; border-bottom: 5px solid #f8aa1c;}
+
+/* 오른쪽 아이콘 */
+.icon-nav{
+  position: absolute;
+  bottom: 22px;
+  right: 50px;
+}
+.icon-nav li{
+  float: left;
+  padding: 0 5px;
+  height: 21px;
+}
+.icon-nav li a{display: inline-block;}
+.icon-nav li a i{
+  font-size: 1.5em;
+}
+.icon-nav li:last-child i{
+  vertical-align: top;
+  display: inline-block;
+}
+.icon-nav li:last-child a{
+  padding-top: 0;
+  font-size: 20px;
+  line-height: 22px;
+  vertical-align: top;
+}
+
+.down-nav{
+  display: none;
+  position: absolute;
+  left: 0; top: 46px;
+  background: #000;
+  width: 100%;
+  height: 600px;
+  z-index: 11;
+  padding: 40px;
+  box-sizing: border-box;
+}
+.down-nav .nav-wrap{
+
+}
+.down-nav .nav-wrap .nav-wrap-box{
+  padding: 0 20px;
+  border-right: 1px solid #fff;
+}
+.down-nav .nav-wrap > div:last-child .nav-wrap-box{
+  border-right: 0;
+}
+
+.down-nav .nav-wrap h3{
+  color: #fff;
+  text-align: center;
+  font-size: 25px;
+}
+.down-nav .nav-wrap .nav-wrap-box ul{margin-top: 40px;}
+.down-nav .nav-wrap .nav-wrap-box ul li{
+  position: relative;
+  padding-bottom: 10px;
+}
+.down-nav .nav-wrap .nav-wrap-box ul li i{
+  position: absolute;
+}
+.down-nav .nav-wrap .nav-wrap-box ul li a{
+  display: inline-block;
+  padding-left: 34px;
+}
+
+.down-nav .nav-item-wrap{
+  width: 730px;
+  height: 520px;
+  border: 1px solid #f8aa1c;
+  border-radius: 5px;
+  position: relative;
+  box-sizing: border-box;
+  float: right;
+  margin-right: 20px;
+}
+.down-nav .nav-item-wrap .item_img{
+  width: 730px;
+  height: 369px;
+  background: url(../img/shu-uemura-750.jpeg);
+}
+.down-nav .nav-item-wrap p{
+  color: #fff;
+  text-align: center; font-size: 1.0em;
+  margin-top: 40px;
+}
+.down-nav .nav-item-wrap p strong{
+  display: block;
+  font-size: 1.2em;
+  margin-bottom: 15px;
+}
+
+/* section ========================================================================================================================================== */
+section{}
+
+/* main_1==============================================*/
+#m1{}
+.main_1{
+  width: 100%;
+  height: 770px;
+}
+.main_1 .contain{}
+.main_1 .contain .row{}
+.main_1 .contain .row{}
+.main_1 .main_slide{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.main_1 .main_slide .img{
+  width: 100%;
+}
+
+
+.sub_slide_first{
+  width: 590px;
+  height: 370px;
+}
+
+/* main_2==============================================*/
+#m2{position: relative; height: 800px;}
+#m2 .contain{width: 100%; height: auto;}
+.main_slide{
+  width: 100%;
+  height: 800px;
+}
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+}
+
+.swiper-container-horizontal>.swiper-pagination-progressbar, .swiper-container-vertical>.swiper-pagination-progressbar.swiper-pagination-progressbar-opposite{
+  width: 100%;
+  height: 10px;
+  left: 0;
+  bottom: 0;
+  top: inherit;
+}
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill{
+  background: #2c2a29;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: left top;
+}
+#m2 .contain-box{
+  position: absolute;
+  width: 560px;
+  height: 680px;
+  top: 50px;
+  left: 50px;
+  background: rgba(255, 255, 255, 0.8);
+  z-index: 1;
+}
+#m2 .contain-box .box-line{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 520px;
+  height: 640px;
+  border: 1px solid #a186be;
+}
+#m2 .contain-box .contain-box-text{
+  width: 60%;
+  position: absolute;
+  left: 50%;
+  top: 100px;
+  transform: translateX(-50%);
+  text-align: center;
+  text-transform: uppercase;
+}
+#m2 .contain-box .contain-box-text span{
+  padding-bottom: 10px;
+}
+#m2 .contain-box .contain-box-img{
+  position: absolute;
+  left: 50%;
+  top: 55%;
+  transform: translate(-50%,-50%);
+  width: 105px;
+  height: 293px;
+  overflow: hidden;
+}
+#m2 .contain-box .contain-box-img img{
+  width: 100%;
+}
+#m2 .contain-box .box-line > span{
+  position: absolute;
+  bottom: 110px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 700;
+}
+#m2 .contain-box .box-line > button{
+  position: absolute;
+  bottom: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.3em;
+  font-weight: 700;
+}
+
+/* main_3==============================================*/
+#m3{position: relative; height: 800px;}
+#m3 .center{background: #000; width: 100%; height: 800px;}
+#m3 .center .contain{
+  width: 1800px;
+  height: auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+
+
+/* main_4==============================================*/
+#m4{position: relative; height: 800px;}
+/* 미디어쿼리 ===============================================================*/
+/* 모바일 */
+@media (max-width:767px) {
+  .btn-menu *, nav, nav *{transition: all 0.5s;}
+  .btn-menu{
+    position: absolute;
+    top: 20px; left: 20px;
+    height: 30px; width: 25px;
+    z-index: 3;
+}
+  .btn-menu span{
+    width: 25px; height: 2px;
+    background: #fff;
+    position: absolute;
+    top: 4px;
+    transform-origin: -2px 1px;
+  }
+  .btn-menu span:nth-child(1){bottom: 4px; top: auto;}
+  .btn-menu span:nth-child(2){top: 50%; margin-top: -1px; }
+
+  #btn-menu:checked + label span:nth-child(1){transform: rotate(-45deg);}
+  #btn-menu:checked + label span:nth-child(2){opacity: 0;}
+  #btn-menu:checked + label span:nth-child(3){transform: rotate(45deg);}
+
+  /* 왼쪽에 숨겨져 있다가 토글메뉴버튼을 누르면 나오는 영역 */
+  nav{
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: #2c2a29;
+    overflow-y: auto;  /* 모바일에서 22depth메뉴를 펼쳤을때 네비게이션의 높이를 넘을 경우 스크롤 자동 발생 */
+  }
+  #btn-menu:checked ~ nav{left: 0;}
+    /* 네비게이션이 펼쳐졌을 때 뒤의 영역을 선택하지 못하게하는 기능도 있음 */
+  #btn-menu:checked ~ nav::before{
+    /* ::after(가상선택자)를 쓰면 z-inde:-1;을 해줘야 막이 뒤로 감. */
+    content: ''; /* content: ''; = 가상선택자::before,::after 를 사용할때 반드시 들어가야하는 속성!! */
+    position: fixed;
+    /* 넓이, 높이 100%와 같은 효과 (값이 0 이어도 값을 지정해줘야함)*/
+    top: 0; left: 0; bottom:0; right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    /* 네비게이션의 다른요소들보다 맨 뒤로가도록 배치 */
+    z-index: -1;
+  }
+
+  /* 검색창 */
+
+  .gnb-nav ul li a{color: #aaa; border-bottom: 1px solid transparent; } /* transparent; 또는 뒤배경색과 똑같이 처리하면 */
+  .gnb-nav ul li a:hover{border-bottom: 1px solid #fff;}
+
+
+
+
+
+}
+/* 태블릿 이상 */
+@media (min-width:768px) {
+
+  /* 검색 */
+  .btn-menu{display: none;} /*태블릿 이상에서는 토글메뉴가 안보이게 처리*/
+
+  /* 네비게이션 */
+  /* nav{}
+  .gnb-nav *{transition: height 0.5s, background 0.5s;} /* 높이랑 배경색에 변하는 시간을 줌*/
+  /* 11depth */
+  .gnb-nav > li{}
+  .gnb-nav > li > a{}
+  /* 21depth */
+  .gnb-nav ul{}
+  .gnb-nav ul li a{}
+  .gnb-nav ul li a:hover{}
+
+  .util-nav{
+    position: absolute;
+    top: 0; right: 0;
+  }
+  .util-nav li{float: left;} */
+
+
+
+
+}

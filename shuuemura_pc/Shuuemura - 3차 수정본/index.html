@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Shuuemura</title>
+  <!-- css -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/css.css">
+  <!-- script-->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
+  <!-- <script src="js/prefixfree.min.js"></script> -->
+  <script src="js/common.js"></script>
+</head>
+<body>
+  <!-- intro -->
+  <div id="intro">
+    <div class="wrap">
+      <div class="wrap-left">
+        <div class="rot">
+          <a href="#m1" class="wow fadeInLeft">Make up</a>
+        </div>
+      </div>
+      <div class="wrap-right">
+        <div class="rot">
+          <a href="#m2" class="wow fadeInRight">Skin care</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /intro -->
+
+  <header>
+    <!-- 모바일환경에서 보이는 토글메뉴버튼 -->
+    <input type="checkbox" id="btn-menu"> <!--id="btn-menu"과  label의 for="btn-menu"가 같아야지 라벨을 체크했을때 선택가능-->
+    <label for="btn-menu" class="btn-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    <h1><a href="#"><img src="img/shuuemura_logo.jpg" alt=""></a></h1>
+
+    <!-- 네비게이션 메뉴 -->
+
+    <nav id="mainNav" clientidmode="static" class="m-nav m-nav--main" role="navigation" aria-label="Main navigation">
+      <ul class="m-list" role="tablist">
+          <li class="m-list__item" role="presentation">
+            <a class="a-link m-nav__link" data-sectionid="63089" href="#" role="tab" aria-controls="MainNavDropDownPanel63089">
+                <span class="a-text m-nav__text">What’s new</span>
+            </a>
+            <div class="down-nav row">
+              <div class="col-xs-12 col-sm-6">
+                <div class="nav-wrap row">
+                  <div class="col-xs-6 col-sm-6">
+                    <div class="nav-wrap-box row">
+                      <h3>신제품</h3>
+                      <ul>
+                        <li><i class="material-icons">keyboard_arrow_right</i><a href="#">NEW 번트 오렌지컬렉션</a></li>
+                        <li><i class="material-icons">keyboard_arrow_right</i><a href="#">NEW 블러셔</a></li>
+                        <li><i class="material-icons">keyboard_arrow_right</i><a href="#">NEW 스테이지 퍼포머 프레쉬 탑코트 미스트</a></li>
+                        <li><i class="material-icons">keyboard_arrow_right</i><a href="#">NEW 스테이지 퍼포머 올인원 인스턴트 마스크</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-xs-6 col-sm-6">
+                    <div class="nav-wrap-box row">
+                      <h3>이달의 프로모션</h3>
+                      <ul>
+                        <li><i class="material-icons">keyboard_arrow_right</i><a href="#">8월의 GIFT</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                <div class="nav-item-wrap-pull row">
+                  <div class="item_img"><img src="img/shu-uemura-750.jpg" alt=""></div>
+                  <a href="#">
+                    <strong>슈에무라 컬러 아틀리에</strong>
+                    하나의 팔레트, 하나의 리필만으로 끝없이 새로워 지는 나만의 메이크업
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="m-list__item" role="presentation">
+              <a class="a-link m-nav__link" data-sectionid="86627" href="#m2" role="tab" aria-controls="MainNavDropDownPanel86627">
+                  <span class="a-text m-nav__text">Skincare</span>
+              </a>
+              <div class="down-nav row">
+                <div class="col-xs-12 col-sm-6">
+                  <div class="nav-wrap row">
+                    <div class="col-xs-6 col-sm-6">
+                      <div class="nav-wrap-box row">
+                        <h3>Skincare</h3>
+                        <ul>
+                          <li><i class="material-icons">keyboard_arrow_right</i><a href="#">클렌징</a></li>
+                          <li><i class="material-icons">keyboard_arrow_right</i><a href="#">모이스춰라이징</a></li>
+                          <li><i class="material-icons">keyboard_arrow_right</i><a href="#">얼티메이트</a></li>
+                          <li><i class="material-icons">keyboard_arrow_right</i><a href="#">화이트닝</a></li>
+                          <li><i class="material-icons">keyboard_arrow_right</i><a href="#">모공케어</a></li>
+                          <li><i class="material-icons">keyboard_arrow_right</i><a href="#">안티에이징</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-6">
+                      <div class="nav-wrap-box row">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                  <div class="nav-item-box">
+                    <div class="nav-item-wrap-small row">
+                      <div class="item_img"><img src="img/4935421620338_1.jpg" alt=""></div>
+                      <a href="">
+                        <strong>맥시:하이드라빌리티</strong>
+                        75,000원 대
+                      </a>
+                      <button>구매하기</button>
+                    </div>
+                    <div class="nav-item-wrap-small row">
+                      <div class="item_img"><img src="img/SHU_18_SkinPerfector_Oil.jpg" alt=""></div>
+                      <a href="#">
+                        <strong>스킨 퍼펙터</strong>
+                        78,000원 대
+                      </a>
+                      <button>구매하기</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </li>
+
+          <li class="m-list__item" role="presentation">
+              <a class="a-link m-nav__link" data-sectionid="1649" href="#m1" role="tab" aria-controls="MainNavDropDownPanel1649">
+                  <span class="a-text m-nav__text">Make up</span>
+              </a>
+              <div class="down-nav row">
+                <div class="col-xs-12 col-sm-6">
+                  <div class="nav-wrap row">
+                    <div class="col-xs-6 col-sm-6">
+                      <div class="nav-wrap-box row">
+                        <h3>Make up</h3>
+                        <ul>
+                          <li><i class="material-icons">keyboard_arrow_right</i><a href="#">페이스</a></li>
+                          <li><i class="material-icons">keyboard_arrow_right</i><a href="#">치크</a></li>
+                          <li><i class="material-icons">keyboard_arrow_right</i><a href="#">아이</a></li>
+                          <li><i class="material-icons">keyboard_arrow_right</i><a href="#">립</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-6">
+                      <div class="nav-wrap-box row">
+                        <ul class="pt35">
+                          <li><i class="material-icons">keyboard_arrow_right</i><a href="#">베이스</a></li>
+                          <li><i class="material-icons">keyboard_arrow_right</i><a href="#">컨실러</a></li>
+                          <li><i class="material-icons">keyboard_arrow_right</i><a href="#">파운데이션</a></li>
+                          <li><i class="material-icons">keyboard_arrow_right</i><a href="#">파우더</a></li>
+                          <li><i class="material-icons">keyboard_arrow_right</i><a href="#">팩트</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                  <div class="nav-item-box">
+                    <div class="nav-item-wrap-small row">
+                      <div class="item_img"><img src="img/rd187.jpg" alt=""></div>
+                      <a href="#">
+                        <strong>루즈 언리미티드 슈프림 마뜨</strong>
+                        37,000원 대
+                      </a>
+                      <button>구매하기</button>
+                    </div>
+                    <div class="nav-item-wrap-small row">
+                      <div class="item_img"><img src="img/1467125_1.jpg" alt=""></div>
+                      <a href="#">
+                        <strong>마스카라 랭쓰 앤 워터프루프</strong>
+                        35,000원 대
+                      </a>
+                      <button>구매하기</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </li>
+
+          <li class="m-list__item" role="presentation">
+              <a class="a-link m-nav__link" data-sectionid="86675" href="#" role="tab" aria-controls="MainNavDropDownPanel86675">
+                  <span class="a-text m-nav__text">Tools</span>
+              </a>
+              <div class="down-nav row">
+                <div class="col-xs-12 col-sm-6">
+                  <div class="nav-wrap row">
+                    <div class="col-xs-6 col-sm-6">
+                      <div class="nav-wrap-box row">
+                        <h3>Tools</h3>
+                        <ul>
+                          <li><i class="material-icons">keyboard_arrow_right</i><a href="#">브러쉬</a></li>
+                          <li><i class="material-icons">keyboard_arrow_right</i><a href="#">액세서리</a></li>
+                          <li><i class="material-icons">keyboard_arrow_right</i><a href="#">도쿄 래쉬 바</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-6">
+                      <div class="nav-wrap-box row">
+                        <ul class="pt35">
+                          <li><i class="material-icons">keyboard_arrow_right</i><a href="#">페이스</a></li>
+                          <li><i class="material-icons">keyboard_arrow_right</i><a href="#">치크</a></li>
+                          <li><i class="material-icons">keyboard_arrow_right</i><a href="#">아이</a></li>
+                          <li><i class="material-icons">keyboard_arrow_right</i><a href="#">립</a></li>
+                          <li><i class="material-icons">keyboard_arrow_right</i><a href="#">포터 </a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                  <div class="nav-item-box">
+                    <div class="nav-item-wrap-small row">
+                      <div class="item_img"><img src="img/petal55brush_1.jpg" alt="petal55brush"></div>
+                      <a href="#">
+                        <strong>페탈 55 파운데이션 브러쉬</strong>
+                        72,000원 대
+                      </a>
+                      <button>구매하기</button>
+                    </div>
+                    <div class="nav-item-wrap-small row">
+                      <div class="item_img"><img src="img/EyelashCurler_Packshot.jpg" alt="EyelashCurler_Packshot"></div>
+                      <a href="#">
+                        <strong>아이래쉬 컬러 뷰러</strong>
+                        22,000원 대
+                      </a>
+                      <button>구매하기</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </li>
+
+          <li class="m-list__item" role="presentation">
+              <a class="a-link m-nav__link" data-sectionid="1190" href="#" role="tab" aria-controls="MainNavDropDownPanel1190">
+                  <span class="a-text m-nav__text">Bestsellers</span>
+              </a>
+          </li>
+
+          <li class="m-list__item" role="presentation">
+              <a class="a-link m-nav__link" data-sectionid="1203" href="#" role="tab" aria-controls="MainNavDropDownPanel1203">
+                  <span class="a-text m-nav__text">Shu mania</span>
+              </a>
+              <div class="down-nav row">
+                <div class="col-xs-12 col-sm-6">
+                  <div class="nav-wrap row">
+                    <div class="col-xs-6 col-sm-6">
+                      <div class="nav-wrap-box row">
+                        <h3>Shu mania</h3>
+                        <ul>
+                          <li><i class="material-icons">keyboard_arrow_right</i><a href="#">VIP 프로그램</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-6">
+                      <div class="nav-wrap-box row">
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                  <div class="nav-item-wrap-pull row">
+                    <div class="item_img"><img src="img/shumaniaclub.JPG" alt=""></div>
+                    <a href="#" class="mt10">
+                      <strong>2018 VIP PROGRAM</strong>
+                      2018년 한해 동안 슈에무라를 사랑해주신 VIP 고객님들께 드리는 선물을 확인하세요.
+                    </a>
+                  </div>
+                </div>
+              </div>
+          </li>
+
+          <li class="m-list__item" role="presentation">
+              <a class="a-link m-nav__link" data-sectionid="10891" href="#" role="tab" aria-controls="MainNavDropDownPanel10891">
+                  <span class="a-text m-nav__text">Discover shu uemura</span>
+              </a>
+              <div class="down-nav row">
+                <div class="col-xs-12 col-sm-6">
+                  <div class="nav-wrap row">
+                    <div class="col-xs-6 col-sm-6">
+                      <div class="nav-wrap-box row">
+                        <h3>Discover shu uemura</h3>
+                        <ul>
+                          <li><i class="material-icons">keyboard_arrow_right</i><a href="#">아트 오브 뷰티</a></li>
+                          <li><i class="material-icons">keyboard_arrow_right</i><a href="#">메이크업 아티스트</a></li>
+                          <li><i class="material-icons">keyboard_arrow_right</i><a href="#">매장 찾기</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-6">
+                      <div class="nav-wrap-box row">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                  <div class="nav-item-wrap-pull row">
+                    <div class="item_img"><img src="img/dfs.PNG" alt=""></div>
+                    <a href="#">
+                      <strong>japanese art of beauty</strong>
+                      "컬러 창조의 모든 경계를 뛰어넘다"
+                    </a>
+                  </div>
+                </div>
+              </div>
+          </li>
+
+      </ul>
+      <ul class="icon-nav">
+        <!-- ul>li*4>a[href="#"] -->
+        <li><a href="#"><i class="material-icons">person</i></a></li>
+        <li><a href="#m5"><i class="material-icons">location_on</i></a></li>
+        <li><a href="#"><i class="material-icons">search</i></a></li>
+        <li class="icon-nav_language"><i class="material-icons">arrow_drop_down</i><a href="#">KO</a></li>
+      </ul>
+      <div class="language-nav row">
+        <div class="language-nav-wrap row">
+          <button><i class="material-icons">clear</i></button>
+          <div class="language-nav-wrap-box row">
+            <span>CHOOSE YOUR</span>
+            <h3>LOCATION / LANGUAGE</h3>
+            <ul>
+              <li><a href="#">KOREA</a></li>
+              <li><a href="#">JAPAN</a></li>
+              <li><a href="#">CHINA</a></li>
+              <li><a href="#">USA-ENGLISH</a></li>
+              <li><a href="#">CA-ENGLISH</a></li>
+              <li><a href="#">CA-FRENCH</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section>
+    <article id="m1" class="main_1">
+      <div class="center">
+        <h2 class="skip">메인1</h2>
+        <div class="contain">
+          <div class="main_slide">
+            <div class="swiper-container m_slide1">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="contain-box wow fadeInLeft">
+                    <div class="box-line">
+                      <div class="contain-box-text">
+                        <h3>마뜨 립스틱, 아이코닉 - 패션을 입다</h3>
+                        <span><strong>NEW</strong>야즈부키 매티튜드 컬렉션</span>
+                      </div>
+                      <button class="button-wrap"><span>Learn more</span></button>
+                    </div>
+                  </div>
+                  <div class="sub_slide_first">
+                    <div class="sub_slide_text">
+                      <h3>NEW ITEM</h3>
+                      <span>신상품을 만나보세요.</span>
+                    </div>
+                    <div class="sub_slide">
+                      <div class="swiper-container m_slide2">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <a href="#">
+                              <img src="img/unlimited-supreme-matte-yazbukey-carmen-bound.png" alt="supreme-matte-yazbukey-carmen-bound">
+                              <span>NEW 야즈부키 매티튜드 컬렉션 3.4g</span>
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="#">
+                              <img src="img/Fresh_cushion_blusher.png" alt="Fresh_cushion_blusher">
+                              <span>NEW 프레쉬 쿠션 블러셔 7g</span>
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="#">
+                              <img src="img/Burnt_Orange_Collection.png" alt="Burnt_Orange_Collection">
+                              <span>NEW 번트 오렌지 컬렉션 3.4g</span>
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="#">
+                              <img src="img/Point_sealer.PNG" alt="Point_sealer">
+                              <span>포인트 실러 2.22ml</span>
+                            </a>
+                          </div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sub_slide_second">
+                    <div class="sub_slide_text">
+                      <h3>NEW ITEM</h3>
+                      <span>신상품을 만나보세요.</span>
+                    </div>
+                    <div class="sub_slide">
+                      <div class="swiper-container m_slide3">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <a href="#">
+                              <img src="img/PetalSkinFluidFoundation.png" alt="PetalSkinFluidFoundation">
+                              <span>모공 파운데이션 30ml</span>
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="#">
+                              <img src="img/SHU_18_HardFormula_SealBrown_Packshot.png" alt="HardFormula">
+                              <span>하드 포뮬라 4g</span>
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="#">
+                              <img src="img/glow_on.png" alt="glow_on">
+                              <span>글로우 온 (리필+케이스) 4g</span>
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="#">
+                              <img src="img/Pressed_eye_shadow.png" alt="Pressed_eye_shadow">
+                              <span>NEW프레스드 아이섀도우 (리필+케이스) 1.4g</span>
+                            </a>
+                          </div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+              </div>
+              <!-- Add Pagination -->
+              <div class="swiper-pagination"></div>
+              <div class="swiper-pagination swiper-pagination-white"></div>
+              <!-- Add Arrows -->
+              <div class="swiper-button-next swiper-button-white"><i class="material-icons">arrow_forward_ios</i></div>
+              <div class="swiper-button-prev swiper-button-white"><i class="material-icons">arrow_back_ios</i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article id="m2" class="main_2">
+      <div class="center">
+        <h2 class="skip">메인2</h2>
+        <div class="contain">
+          <div class="main_slide">
+            <div class="swiper-container slide2">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="contain-box wow fadeInLeft">
+                    <div class="box-line">
+                      <div class="contain-box-text">
+                        <span>blanc:chroma brightening & polishing gentle cleansing oil</span>
+                        <h3>피부가 칙칙하고 생기없을 때</h3>
+                      </div>
+                      <div class="contain-box-img">
+                        <img src="img/ssu.png" alt="SHU_18_CO_BlancChroma_450ml">
+                      </div>
+                      <span>블랑 :크로마 클렌징 오일150ml</span>
+                      <button class="button-wrap"><span>Learn more</span></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+              </div>
+              <!-- Add Pagination -->
+              <div class="swiper-pagination"></div>
+              <!-- Add Arrows -->
+              <div class="swiper-button-prev swiper-button-white"><i class="material-icons">arrow_back_ios</i></div>
+              <div class="swiper-button-next swiper-button-white"><i class="material-icons">arrow_forward_ios</i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article id="m3" class="main_3">
+      <div class="center">
+        <h2 class="skip">메인3</h2>
+        <div class="contain">
+          <div class="col-xs-12 col-sm-6">
+            <div class="main_3">
+              <div class="main_3_text">
+                <h3>shuuemurakr</h3>
+                <span>July WEEK 5 / 2018.07.05</span>
+                <p>[Shu Uemura X VOGUE] NEW Burt's Orange Collection with Sonnah</p>
+                <span>독보적인 #번트오렌지컬렉션과 함께한 그녀의 화보를 영상으로 만나보세요.</span>
+                <button class="button-wrap"><span>Learn more</span></button>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6">
+            <div class="contain wow zoomIn">
+              <div class="video">
+                <iframe width="850" height="550" src="https://www.youtube.com/embed/IMih9oqr5G4?ecver=1&controls=0&autoplay=1&showinfo=0&rel=0&loop=1&modestbranding=1&controls=1 " frameborder="0"  allowfullscreen></iframe>
+              </div>
+              <button><img src="img/kbeauty-video-play.png" alt=""></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article id="m4" class="main_4">
+      <div class="center">
+        <h2 class="skip">메인4</h2>
+        <div class="contain">
+          <div class="content_wrap">
+            <h3>WEEK'S BEST RANKING</h3>
+            <div class="content_item">
+              <div class="item_box">
+                <div class="ranking_box1 wow fadeInUp">
+                  <div class="item_wrap">
+                    <a href="#" class="item_link">
+                      <div class="inner">
+                        <span class="img_wrap">
+                          <img src="img/thelightbulb.jpg" alt="thelightbulb">
+                        </span>
+                        <div class="summary_info">
+                          <div class="txt_wrap">
+                            <p class="title">가볍지만 충분하다 !</p>
+                            <p class="text_desc">라이트 벌브 에센스 파운데이션 <br> SPF PA+++ (30ml)</p>
+                            <p class="price">69,000원 대</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <!-- .item_link에 .hover, .focus가 적용되면 on클래스 추가 -->
+                    <div class="item_detail">
+                      <div class="detail_wrap">
+                        <!-- middel 정렬 필요, .detail_wrap높이값을 2로 나눈 값을 margin-top음수값으로 적용 -->
+                        <button>Quick View</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item_box">
+                <div class="ranking_box2 wow fadeInUp">
+                  <div class="item_wrap">
+                    <a href="#" class="item_link">
+                      <div class="inner">
+                        <span class="img_wrap">
+                          <img src="img/Petal_cushion.png" alt="Petal_cushion">
+                        </span>
+                        <div class="summary_info">
+                          <div class="txt_wrap">
+                            <p class="title">슈에무라 베스트 셀러 모공 파데를 간편하게<br>
+                              <strong>NEW</strong>모공쿠션
+                            </p>
+                            <p class="text_desc">NEW 페탈 쿠션 SPF 40 PA++(13g)</p>
+                            <p class="price">45,000원 대</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <!-- .item_link에 .hover, .focus가 적용되면 on클래스 추가 -->
+                    <div class="item_detail">
+                      <div class="detail_wrap">
+                        <!-- middel 정렬 필요, .detail_wrap높이값을 2로 나눈 값을 margin-top음수값으로 적용 -->
+                        <button>Quick View</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item_box">
+                <div class="ranking_box3 wow fadeInUp">
+                  <div class="item_wrap">
+                    <a href="#" class="item_link">
+                      <div class="inner">
+                        <span class="img_wrap">
+                          <img src="img/sublime_beauty_cleansing_oil.png" alt="sublime_beauty_cleansing_oil">
+                        </span>
+                        <div class="summary_info">
+                          <div class="txt_wrap">
+                            <p class="title">프리미엄 클렌징으로 이상적인 피부 컨디션을 완성하다!</p>
+                            <p class="text_desc">NEW 얼티메이트 클렌징 오일(150ml)</p>
+                            <p class="price">49,000원 대</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <!-- .item_link에 .hover, .focus가 적용되면 on클래스 추가 -->
+                    <div class="item_detail">
+                      <div class="detail_wrap">
+                        <!-- middel 정렬 필요, .detail_wrap높이값을 2로 나눈 값을 margin-top음수값으로 적용 -->
+                        <button>Quick View</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item_box">
+                <div class="ranking_box4 wow fadeInUp">
+                  <div class="item_wrap">
+                    <a href="#" class="item_link">
+                      <div class="inner">
+                        <span class="img_wrap">
+                          <img src="img/tint_in_balm.png" alt="tint_in_balm">
+                        </span>
+                        <div class="summary_info">
+                          <div class="txt_wrap">
+                            <p class="title">비비드 컬러 립밤에 담다.</p>
+                            <p class="text_desc">틴트 인 밤</p>
+                            <p class="price">37,000원 대</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <!-- .item_link에 .hover, .focus가 적용되면 on클래스 추가 -->
+                    <div class="item_detail">
+                      <div class="detail_wrap">
+                        <!-- middel 정렬 필요, .detail_wrap높이값을 2로 나눈 값을 margin-top음수값으로 적용 -->
+                        <button>Quick View</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item_box">
+                <div class="ranking_box5 wow fadeInUp">
+                  <div class="item_wrap">
+                    <a href="#" class="item_link">
+                      <div class="inner">
+                        <span class="img_wrap">
+                          <img src="img/blanc_chroma.png" alt="blanc_chroma">
+                        </span>
+                        <div class="summary_info">
+                          <div class="txt_wrap">
+                            <p class="title">맑고 깨끗한 피부를 위한 데일리 브라이트닝 솔루션</p>
+                            <p class="text_desc">블랑:크로마 UV 프로텍터 (40ml)</p>
+                            <p class="price">58,000원 대</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <!-- .item_link에 .hover, .focus가 적용되면 on클래스 추가 -->
+                    <div class="item_detail">
+                      <div class="detail_wrap">
+                        <!-- middel 정렬 필요, .detail_wrap높이값을 2로 나눈 값을 margin-top음수값으로 적용 -->
+                        <button>Quick View</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item_box">
+                <div class="ranking_box6 wow fadeInUp">
+                  <div class="item_wrap">
+                    <a href="#" class="item_link">
+                      <div class="inner">
+                        <span class="img_wrap">
+                          <img src="img/hard_formula.png" alt="hard_formula">
+                        </span>
+                        <div class="summary_info">
+                          <div class="txt_wrap">
+                            <p class="title">하드 포뮬라 하드 9</p>
+                            <p class="text_desc">하드 포뮬라</p>
+                            <p class="price">33,000원 대</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <!-- .item_link에 .hover, .focus가 적용되면 on클래스 추가 -->
+                    <div class="item_detail">
+                      <div class="detail_wrap">
+                        <!-- middel 정렬 필요, .detail_wrap높이값을 2로 나눈 값을 margin-top음수값으로 적용 -->
+                        <button>Quick View</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item_box">
+                <div class="ranking_box7 wow fadeInUp">
+                  <div class="item_wrap">
+                    <a href="#" class="item_link">
+                      <div class="inner">
+                        <span class="img_wrap">
+                          <img src="img/SHU_18_SkinPerfector_Oil.jpg" alt="SHU_18_SkinPerfector_Oil">
+                        </span>
+                        <div class="summary_info">
+                          <div class="txt_wrap">
+                            <p class="title">50년 역사의 오일 명가 브랜드의 <br> 노하우를 한병에 담아낸 페이셜 오일</p>
+                            <p class="text_desc">스킨 퍼펙터 (30ml)</p>
+                            <p class="price">78,000원 대</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <!-- .item_link에 .hover, .focus가 적용되면 on클래스 추가 -->
+                    <div class="item_detail">
+                      <div class="detail_wrap">
+                        <!-- middel 정렬 필요, .detail_wrap높이값을 2로 나눈 값을 margin-top음수값으로 적용 -->
+                        <button>Quick View</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item_box">
+                <div class="ranking_box8 wow fadeInUp">
+                  <div class="item_wrap">
+                    <a href="#" class="item_link">
+                      <div class="inner">
+                        <span class="img_wrap">
+                          <img src="img/LaqueSupreme_RD05.jpg" alt="LaqueSupreme_RD05">
+                        </span>
+                        <div class="summary_info">
+                          <div class="txt_wrap">
+                            <p class="title">입술에 새겨지는 강렬한 컬러</p>
+                            <p class="text_desc">라끄 슈프림(5.4ml)</p>
+                            <p class="price">38,000원 대</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <!-- .item_link에 .hover, .focus가 적용되면 on클래스 추가 -->
+                    <div class="item_detail">
+                      <div class="detail_wrap">
+                        <!-- middel 정렬 필요, .detail_wrap높이값을 2로 나눈 값을 margin-top음수값으로 적용 -->
+                        <button>Quick View</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+          <div class="content_wrap_bottom">
+            <div class="content_wrap_bottom-box">
+              <button>RANKING more view<i class="material-icons">add</i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article id="m5" class="main_5">
+      <div class="center">
+        <h2 class="skip">메인5</h2>
+        <div class="contain">
+          <div class="row">
+            <div class="find_store_event_news">
+              <div class="col-xs-12 col-sm-8">
+                <div class="find_store row">
+                  <h3>슈에무라 매장 찾기</h3>
+                  <span>가까운 슈에무라 매장에서 당신의 아름다움을 경험해 보세요!</span>
+                  <div class="col-xs-12 col-sm-12">
+                    <div class="find_store_box row">
+                      <form>
+                        <label for="store_search" class="skip">매장검색</label>
+                        <input type="text" id="store_search" placeholder="ex.현대 백화점 신촌점">
+                        <button><i class="material-icons">search</i></button>
+                      </form>
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d790.7419633517826!2d126.93556151831969!3d37.555821159514785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c9895aeded545%3A0xe5abd4085bafffde!2z7ZiE64yA67Cx7ZmU7KCQIOyLoOy0jOygkA!5e0!3m2!1sko!2skr!4v1534659157568" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-4 col-sm-4">
+                <div class="event_news-box row">
+                  <h3>NEWS / EVENT</h3>
+                  <span>상시 업데이트되는 슈에무라에 관한 뉴스와 <br>
+                    이벤트에 관한 정보를 받아보세요!
+                  </span>
+                  <div class="event_news-box_slide">
+                    <div class="swiper-container slide5">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <a href="#">
+                            <span>- news -</span>
+                            <h4>슈에무라, 패션 브랜드 ‘메종 키츠네’ 콜라보레이션 출시</h4>
+                          </a>
+                        </div>
+                        <div class="swiper-slide">
+                          <a href="#">
+                            <span>- event -</span>
+                            <h4>번트 오렌지 메이크업 컨설팅 서비스</h4>
+                          </a>
+                        </div>
+                      </div>
+                      <!-- Add Pagination -->
+                      <div class="swiper-pagination"></div>
+                      <!-- Add Arrows -->
+                      <div class="swiper-button-next"><i class="material-icons">keyboard_arrow_right</i></div>
+                      <div class="swiper-button-prev"><i class="material-icons">keyboard_arrow_left</i></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article id="m6" class="main_6">
+      <div class="center">
+        <h2 class="skip">메인6</h2>
+        <div class="contain">
+          <div class="row">
+            <div class="sns_contents">
+              <div class="col-xs-12 col-sm-12">
+                <div class="sns_contents-box row">
+                  <h3># SHUUEMURA SNS</h3>
+                  <span>슈에무라에서 제공하는 ‘ hot ’ 한 메이크업을 확인해 보세요!</span>
+                  <div class="col-xs-12 col-sm-12">
+                    <div class="sns-box_slide">
+                      <!-- <div class="swiper-container slide6">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide"><a href="#"><i class="material-icons">search</i></a></div>
+                          <div class="swiper-slide"><a href="#"><i class="material-icons">search</i></a></div>
+                          <div class="swiper-slide"><a href="#"><i class="material-icons">search</i></a></div>
+                          <div class="swiper-slide"><a href="#"><i class="material-icons">search</i></a></div>
+                          <div class="swiper-slide"><a href="#"><i class="material-icons">search</i></a></div>
+                          <div class="swiper-slide"><a href="#"><i class="material-icons">search</i></a></div>
+                          <div class="swiper-slide"><a href="#"><i class="material-icons">search</i></a></div>
+                          <div class="swiper-slide"><a href="#"><i class="material-icons">search</i></a></div>
+                        </div>
+                      </div> -->
+                      <div class="slide6">
+                        <ul>
+                          <li><img src="img/1a.PNG" alt=""><a href="#"><i class="material-icons">search</i></a></li>
+                          <li><img src="img/2a.PNG" alt=""><a href="#"><i class="material-icons">search</i></a></li>
+                          <li><img src="img/3a.PNG" alt=""><a href="#"><i class="material-icons">search</i></a></li>
+                          <li><img src="img/4a.PNG" alt=""><a href="#"><i class="material-icons">search</i></a></li>
+                          <li><img src="img/5a.PNG" alt=""><a href="#"><i class="material-icons">search</i></a></li>
+                          <li><img src="img/6a.PNG" alt=""><a href="#"><i class="material-icons">search</i></a></li>
+                          <li><img src="img/7a.PNG" alt=""><a href="#"><i class="material-icons">search</i></a></li>
+                          <li><img src="img/8a.PNG" alt=""><a href="#"><i class="material-icons">search</i></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </section>
+  <footer>
+    <div id="footer">
+      <div class="information row">
+        <div class="col-xs-12 col-sm-6">
+          <div class="information-wrap row">
+            <div class="col-xs-6 col-sm-6">
+              <div class="information-wrap-box row">
+                <h3>슈에무라 소개</h3>
+                <ul>
+                  <li><i class="material-icons">keyboard_arrow_right</i><a href="#">슈에무라 소개</a></li>
+                  <li><i class="material-icons">keyboard_arrow_right</i><a href="#">매장 찾기</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xs-6 col-sm-6">
+              <div class="information-wrap-box row">
+                <h3>고객지원</h3>
+                <ul>
+                  <li><i class="material-icons">keyboard_arrow_right</i><a href="#">온라인 문의</a></li>
+                  <li><i class="material-icons">keyboard_arrow_right</i><a href="#">자주하는 질문</a></li>
+                  <li><i class="material-icons">keyboard_arrow_right</i><a href="#">배송조회</a></li>
+                  <li><i class="material-icons">keyboard_arrow_right</i><a href="#">이용약관&개인정보취급방침</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+          <div class="information-box row">
+            <h3>고객문의</h3>
+            <ul>
+              <li><span>- 슈에무라 대표전화 : (080) 022-3332(오전 10시~오후 6시)</span></li>
+              <li><span>- 결제문의 : (080) 022-3332</span></li>
+              <li><span>- 슈에무라 공식몰 문의 : (080) 022-3332(오전 10시~오후 5시)</span></li>
+              <li><span>- 업무시간 : 월~금, 공휴일 제외</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-logo">
+        <img src="img/shuuemura_logo.jpg" alt="shuuemura_logo">
+      </div>
+      <div class="footer-sns-icons">
+        <ul>
+          <li><a href="https://www.facebook.com/shuuemuraUSCA/"><img src="img/if_06-facebook_104498A.png" alt=""></a></li>
+          <li><a href="https://twitter.com/shuuemura"><img src="img/if_03-twitter_104501A.png" alt=""></a></li>
+          <li><a href="https://www.instagram.com/shuuemura/"><img src="img/if_38-instagram_104466A.png" alt=""></a></li>
+          <li><a href="https://www.youtube.com/user/shuuemuraTV"><img src="img/if_18-youtube_104482A.png" alt=""></a></li>
+        </ul>
+      </div>
+      <div class="footer-copy">
+        <span>엘오케이(유) | 사업자번호: 220-81-73483 | 대표자: 얀 브노와 르부르동 | 개인정보처리방침 | 소비자 상담실 080 022 3332 | copyrightⓒ 2009</span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="popup_background"></div>
+
+
+  <!-- 로그인 -->
+  <div id="login_popup">
+    <div class="login_wrap">
+      <div class="login_wrap_line">
+        <button><i class="material-icons">clear</i></button>
+        <div class="login_box">
+          <h3>로그인</h3>
+          <span>슈에무라 홈페이지에 방문해 주셔서 진심으로 감사드립니다.</span>
+          <form action="">
+            <div class="id">
+              <label for="id" class="skip">아이디</label>
+              <i class="material-icons">person</i><input type="text" placeholder="아이디" id="id">
+              <!-- <p class="message">아이디값을 입력하세요.</p> -->
+            </div>
+            <div class="password">
+              <label for="password" class="skip">비밀번호</label>
+              <i class="material-icons">https</i><input type="password" placeholder="비밀번호" id="password">
+              <!-- <p class="message">비밀번호를 입력하세요.</p> -->
+            </div>
+
+            <!-- type을 submit=>button으로 변경(검사 후 submit처리하기위함) -->
+            <button id="btn-submit">login</button>
+            <p class="find-info">
+              <a href="#"><i class="material-icons">lock_open</i>아이디 찾기 / 비밀번호 찾기</a>
+              ㅣ
+              <a href="#"><i class="material-icons">person_add</i>아직 회원이 아니세요?</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- 검색 -->
+  <div id="search_popup">
+    <div class="search_wrap">
+      <div class="search_wrap_line">
+        <button><i class="material-icons">clear</i></button>
+        <div class="search_box">
+          <h3>검색</h3>
+          <div class="tag">
+            <a href="#">#프레쉬 틴트 쿠션</a>
+            <a href="#">#글로우 크리에이터</a>
+            <a href="#">#NEW 루즈 언리미티드</a>
+          </div>
+          <form>
+            <label for="search" class="skip">전체검색</label>
+            <input type="text" id="search" placeholder="페탈쿠션">
+            <button><i class="material-icons">search</i></button>
+          </form>
+          <div class="rolling">
+            <ul>
+              <li><a href="#">클렌징 오일</a></li>
+              <li><a href="#">페탈 파운데이션</a></li>
+              <li><a href="#">루즈 언리미티드</a></li>
+              <li><a href="#">스킨 퍼펙터</a></li>
+              <li><a href="#">쿠션 파운데이션</a></li>
+              <li><a href="#">라끄 슈프림</a></li>
+              <li><a href="#">브로우:스워드</a></li>
+              <li><a href="#">글로우 온</a></li>
+              <li><a href="#">오토 젤 라이너</a></li>
+              <!-- <li><a href="#">아이 섀도우</a></li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /검색 -->
+
+
+  <!-- m4 팝업 -->
+  <div id="m4_popup">
+    <div class="m4_popup_wrap">
+      <div class="m4_popup_wrap_line">
+        <button><i class="material-icons">clear</i></button>
+        <div class="col-xs-6 col-sm-6">
+          <div class="m4_popup_imgbox">
+            <div class="m4_popup_slide">
+              <div class="swiper-container popup_slide">
+                <div class="swiper-wrapper">
+                  <!-- <div class="swiper-slide"></div>
+                  <div class="swiper-slide"></div>
+                  <div class="swiper-slide"></div>
+                  <div class="swiper-slide"></div> -->
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+            <div class="m4_popupimg-list">
+              <!-- ul>li*4>a[href=#]>img[src=img/lemonade$-S.jpg] -->
+              <ul>
+                <!-- <li class="active"><a href="#"><img src="img/thelightbulb.jpg" alt="thelightbulb"></a></li>
+                <li><a href="#"><img src="img/the_lightbulb_fluid_foundation_764_texture.jpg" alt="764_texture"></a></li>
+                <li><a href="#"><img src="" alt=""></a></li>
+                <li><a href="#"><img src="" alt=""></a></li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="line"></div>
+        <div class="col-xs-6 col-sm-6">
+          <div class="m4_popup_titlebox">
+            <h3>라이트 벌브 에센스 파운데이션</h3>
+            <span class="s1">촉촉하면서 자연스러운 광채를 원한다면?</span>
+            <p>에센스 파운데이션 <br>
+              - 밀림 없는 가벼운 신개념 텍스쳐로 강력한 자외선 차단은 물론 촉촉한 광채의 파운데이션
+            </p>
+            <strong>69,000원 대</strong>
+            <div class="select_1">
+              <select>
+                <option value="">옵션1</option>
+                <option value="">옵션2</option>
+                <option value="">옵션3</option>
+              </select>
+            </div>
+            <div class="select_2">
+              <select>
+                <option value="">옵션1</option>
+                <option value="">옵션2</option>
+                <option value="">옵션3</option>
+              </select>
+            </div>
+            <button class="learn_more">자세히보기</button>
+            <button class="find_store">매장찾기</button>
+            <button class="buying">구매하기</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+</html>
