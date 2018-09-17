@@ -318,11 +318,11 @@ $(function() {
          var mobileKeyWords = new Array('Android', 'iPhone', 'iPod', 'BlackBerry', 'Windows CE', 'SAMSUNG', 'LG', 'MOT', 'SonyEricsson');
          for (var info in mobileKeyWords) {
              if (navigator.userAgent.match(mobileKeyWords[info]) != null) {
-                $(location).attr('href', 'https://sham911.github.io/shuuemura_m/');
+                $(location).attr('href', 'https://sham911.github.io/shuuemura_pc/');
                 return true;
 
              }else {
-               $(location).attr('href', 'https://sham911.github.io/shuuemura_pc/');
+               $(location).attr('href', 'https://sham911.github.io/shuuemura_m/');
                // return false;
 
              }
