@@ -129,6 +129,8 @@ $(function () {
     },
   })
 
+  // language-nav ==============================================================
+
   $('.icon-nav .icon-nav_language').on({
     mouseenter:function(){
       $(this).find('.language-nav').stop().slideDown();
@@ -142,10 +144,26 @@ $(function () {
     }
   })
 
+
   $('.language-nav button').click(function() {
     $('.language-nav').slideUp();
   })
 
+  $('.language-nav li a').on('click', function(e) {
+    e.preventDefault();
+    var language=$('.language-nav li a').index(this);
+    // console.log(language);
+    var text_len=[
+      'KO',
+      'JP',
+      'CN',
+      'USA',
+      'CA-EN',
+      'CA-FR',
+    ];
+    // console.log(text_len);
+    $('.icon-nav_language a').text(text_len[language]);
+  })
 
   //dropdown 컨텐츠 오른쪽 선 길이
   // var nav_item_wrap=$('.nav-wrap-box').outerHeight();
@@ -466,7 +484,7 @@ $(function () {
       console.log(index);
       popup_slide.slideTo(index,1000,false);
     })
-
+    popup_slide.update();
 
   })//m4 퀵뷰 팝업
 
@@ -576,6 +594,24 @@ $(function () {
   })
 
 
+// 모바일환경일때 디바스환경에 맞게 변하기
+function checkMobileDevice() {
+       var mobileKeyWords = new Array('Android', 'iPhone', 'iPod', 'BlackBerry', 'Windows CE', 'SAMSUNG', 'LG', 'MOT', 'SonyEricsson');
+       for (var info in mobileKeyWords) {
+           if (navigator.userAgent.match(mobileKeyWords[info]) != null) {
+              $(location).attr('href', 'https://sham911.github.io/shuuemura_m/');
+              return true;
+
+           }else {
+             $(location).attr('href', 'https://sham911.github.io/shuuemura_pc/');
+             // return false;
+
+           }
+       }
+       return false;
+   }
+
+  checkMobileDevice();
 
 
 })

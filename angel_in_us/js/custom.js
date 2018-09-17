@@ -160,4 +160,8 @@ jQuery(document).ready(function( $ ) {
     e.preventDefault();
     $('.fix2017').toggle();
   })
+  $('.fix2017 a').click(function() {
+    $('.fix2017').hide();
+  })
+
 });
