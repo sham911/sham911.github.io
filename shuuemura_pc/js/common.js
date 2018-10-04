@@ -604,11 +604,11 @@ function checkMobileDevice() {
 
            }else {
              $(location).attr('href', 'https://sham911.github.io/shuuemura_pc/');
-             return true;
+             return false;
 
            }
        }
-       return false;
+       return true;
    }
 
   checkMobileDevice();
