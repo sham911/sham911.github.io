@@ -314,23 +314,23 @@ $(function() {
   })
 
   // 모바일환경일때 디바스환경에 맞게 변하기
-  function checkMobileDevice() {
-         var mobileKeyWords = new Array('Android', 'iPhone', 'iPod', 'BlackBerry', 'Windows CE', 'SAMSUNG', 'LG', 'MOT', 'SonyEricsson');
-         for (var info in mobileKeyWords) {
-             if (navigator.userAgent.match(mobileKeyWords[info]) != null) {
-                $(location).attr('href', 'https://sham911.github.io/shuuemura_m/');
-                return true;
-
-             }else {
-               $(location).attr('href', 'https://sham911.github.io/shuuemura_pc/');
-               return false;
-
-             }
-         }
-         return true;
-     }
-
-    checkMobileDevice();
+  // function checkMobileDevice() {
+  //        var mobileKeyWords = new Array('Android', 'iPhone', 'iPod', 'BlackBerry', 'Windows CE', 'SAMSUNG', 'LG', 'MOT', 'SonyEricsson');
+  //        for (var info in mobileKeyWords) {
+  //            if (navigator.userAgent.match(mobileKeyWords[info]) != null) {
+  //               $(location).attr('href', 'https://sham911.github.io/shuuemura_m/');
+  //               return true;
+  //
+  //            }else {
+  //              $(location).attr('href', 'https://sham911.github.io/shuuemura_pc/');
+  //              return false;
+  //
+  //            }
+  //        }
+  //        return true;
+  //    }
+  //
+  //   checkMobileDevice();
 
 
 
