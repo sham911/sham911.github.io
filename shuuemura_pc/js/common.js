@@ -608,7 +608,7 @@ function checkMobileDevice() {
 
            }
        }
-       return true;
+      //  return true;
    }
 
   checkMobileDevice();
