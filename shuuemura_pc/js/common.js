@@ -604,7 +604,7 @@ function checkMobileDevice() {
 
            }else {
              $(location).attr('href', 'https://sham911.github.io/shuuemura_pc/');
-             // return false;
+             return false;
 
            }
        }
