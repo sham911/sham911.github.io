@@ -322,7 +322,7 @@ $(function() {
                 return true;
 
              }else {
-               $(location).attr('href', 'https://sham911.github.io/shuuemura_pc/');
+               $(location).attr('href', 'https://sham911.github.io/shuuemura_m/');
                return false;
 
              }
