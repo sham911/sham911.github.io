@@ -1907,6 +1907,9 @@ h1 {
 
 	.home-content-tablecell .home-section-links li {
 		font-size: 1.3rem;
+		letter-spacing: 0;
+		margin-right: 0;
+		padding-left: 0;
 	}
 
 	.home-content-tablecell .home-section-links a {
@@ -1929,7 +1932,7 @@ h1 {
 	}
 
 	.home-content-tablecell .row {
-		padding-top: 9rem;
+		padding-top: 10rem;
 		padding-bottom: 3rem;
 	}
 
@@ -1997,22 +2000,22 @@ h1 {
 
 	.home-content-tablecell .home-bottom-text {
 		padding-right: 0;
-		height: 640px;
+		height: 520px;
 		margin-top: 0;
+		position: relative;
 	}
 
 	.home-content-tablecell h3 {
 		font-size: 1.4rem;
-		margin-top: 15px;
 	}
 
 	.animate-intro-container{
-		top: 38%;
-		width: 79%;
+		top: 40%;
+		width: 73%;
 	}
 
 	.home-content-tablecell h1 {
-		font-size: 4.2rem;
+		font-size: 3.5rem;
 	}
 
 	.button-R{
@@ -2020,7 +2023,11 @@ h1 {
 	}
 
 	.home-content-tablecell .home-section-links {
-		width: 220px;
+		width: 133px;
+		text-align: left;
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
 	}
 
 }
